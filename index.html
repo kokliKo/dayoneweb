@@ -7,6 +7,8 @@
     <meta content="Your ultimate fitness app! Tailored workouts for strength, cardio, or weight loss. Flexible for home or gym, with smart progress tracking and weekly goals." name="description"/>
     <link href="./normalize.css" rel="stylesheet"/>
     <link href="./icon.png" rel="apple-touch-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://appdayone.com">
     <style>
         @font-face {
             font-family: 'ProximaNova-Regular';
@@ -18,7 +20,7 @@
             font-display: swap;
         }
         body {
-            background-color: #17171C;
+            background-color: #1A191F;
             color: #8689A3;
             font-family: "ProximaNova-Regular", sans-serif;
             margin: 0;
@@ -44,7 +46,7 @@
             display: block;
         }
         .logo, .tagline {
-            margin-bottom: 24px;
+            margin-bottom: 32px;
             display: block;
         }
         .description {
@@ -58,14 +60,22 @@
             color: #FFB730;
             text-decoration: none;
         }
-
+        .footer-link {
+            font-size: 0.9em;
+            color: #8689A3;
+            text-decoration: none;
+        }
+        .footer-link:hover {
+            color: #8689A3;
+            text-decoration: underline;
+        }
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
                 align-items: left;
                 gap: 30px;
                 margin: 50px auto 0;
-                padding: 0 20px;
+                padding: 0 20px 40px 20px;
             }
             .left-column {
                 display: none;
@@ -76,7 +86,7 @@
                 width: 100%;
             }
             .logo, .tagline {
-                margin: 0 0 20px;
+                margin: 24px 0;
                 max-width: 100%;
             }
             .description {
@@ -89,27 +99,29 @@
 <body>
     <div class="container">
         <div class="left-column">
-            <img src="app_screenshot_1.png" alt="App Screenshot 1">
+            <img src="app_screenshot_1.png" alt="App Screenshot 1" alt="Day One application screenshot">
         </div>
         <div class="right-column">
-            <img src="dayone_logo.svg" alt="Day One Logo" class="logo">
-            <img src="smart_workouts.svg" alt="Smart Workouts" class="tagline">
+            <img src="dayone_logo.svg" alt="Day One Logo" class="logo" alt="Day One logo">
+            <img src="smart_workouts.svg" alt="Smart Workouts" class="tagline" alt="Smart Workouts. Built For You.">
             <div class="description">
-                Day One is the fitness app we wish existed... so we built it!<br><br>
-                • Tailored to Your Goals: Build strength, boost cardio, lose weight, or improve fitness.<br><br>
-                • Flexible Workouts: Use bodyweight or gear like dumbbells, at home or in the gym.<br><br>
-                • Smart Progress: Tracks sessions, adjusts difficulty based on feedback, guides goals.<br><br>
-                • Stay on Track: Set weekly targets, get reminders to stay motivated.<br><br>
-                • Your Workout, Your Rules: Skip exercises, adjust duration, shorten warmups...<br><br>
-                • Clean, simple design keeps you focused on your workout.<br><br>
-                Thank you for choosing Day One!<br>#EveryDayIsDayOne
+                <p>Day One is the fitness app we wish existed... so we built it!</p>
+                <p>• Tailored to Your Goals: Build strength, boost cardio, lose weight, or improve fitness.</p>
+                <p>• Flexible Workouts: Use bodyweight or gear like dumbbells, at home or in the gym.</p>
+                <p>• Smart Progress: Tracks sessions, adjusts difficulty based on your feedback.</p>
+                <p>• Stay on Track: Set weekly targets, get reminders to stay motivated.</p>
+                <p>• Your Workout, Your Rules: Skip exercises, adjust duration, shorten warmups...</p>
+                <p>• Clean, simple design keeps you focused on your workout.</p>
+                <p>Thank you for choosing Day One!</p>
+                <p>#EveryDayIsDayOne</p>
             </div>
-            <div class="appstore">
+<!--             <div class="appstore">
                 <a href="https://www.apple.com/app-store/">
                     <img src="appstore.svg" alt="Download on the App Store">
                 </a>
-            </div>
-            <p>We'd love to hear from you, <a href="mailto:contact@appdayone.com" class="contact-us">contact us</a></p>
+            </div> -->
+            <p>We'd love to hear from you, <a target="_blank" href="mailto:contact@appdayone.com" class="contact-us">contact us</a>.</p>
+            <p><a href="./privacy-policy.html" class="footer-link">Privacy Policy</a> • <a href="./terms-and-conditions.html" class="footer-link">Terms and Conditions</a></p>
         </div>
     </div>
 </body>
