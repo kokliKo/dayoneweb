@@ -56,10 +56,24 @@
         .appstore img {
             width: 150px;
         }
-        .contact-us {
-            color: #FFB730;
-            text-decoration: none;
+        .social-links {
+          display: flex;
+          gap: 20px;
+          justify-content: left;
+          align-items: left;
         }
+        .social-link {
+          width: 40px;
+          height: 40px;
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+        }
+        .insta { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); }
+        .x { background: #000000; }
+        .mail { background: #ffffff; }
         .footer-link {
             font-size: 0.9em;
             color: #8689A3;
@@ -120,7 +134,17 @@
                     <img src="appstore.svg" alt="Download on the App Store">
                 </a>
             </div> -->
-            <p>We'd love to hear from you, <a target="_blank" href="mailto:contact@appdayone.com" class="contact-us">contact us</a>.</p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/appdayonechallenge/" target="_blank" class="social-link insta">
+                <img src="./insta_logo.svg" alt="Instagram" width="20" height="20">
+              </a>
+              <a href="https://x.com/AppDayOne" target="_blank" class="social-link x">
+                <img src="./x_logo.svg" alt="X" width="20" height="20">
+              </a>
+              <a href="mailto:mailto:contact@appdayone.com" target="_blank" class="social-link mail">
+                <img src="./mail_logo.svg" alt="Mail" width="20" height="16">
+              </a>
+            </div>
             <p><a href="./privacy-policy.html" class="footer-link">Privacy Policy</a> • <a href="./terms-and-conditions.html" class="footer-link">Terms and Conditions</a></p>
         </div>
     </div>
